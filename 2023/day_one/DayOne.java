@@ -28,7 +28,7 @@ public class DayOne {
 
     public static void main(String[] args) throws Exception {
         try {
-            File file = new File("/home/gaurav/code/advent_of_code/2023/inputs/day_one.txt");
+            File file = new File("../inputs/day_one.txt");
 
             DayOne day_one_1 = new DayOne(new Scanner(file));
             System.out.println(day_one_1.part_one());

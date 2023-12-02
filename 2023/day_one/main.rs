@@ -5,7 +5,7 @@ const NUM_MAP: &'static [&'static str] = &[
     r"zero", r"one", r"two", r"three", r"four", r"five", r"six", r"seven", r"eight", r"nine",
 ];
 fn main() {
-    let file = read_to_string("/home/gaurav/code/advent_of_code/2023/inputs/day_one.txt").unwrap();
+    let file = read_to_string("../inputs/day_one.txt").unwrap();
     println!("{}", part_one(&file));
     println!("{}", part_two(&file));
 }

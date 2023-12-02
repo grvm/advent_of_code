@@ -15,7 +15,7 @@ class DayOne {
             )
     fun part_one(): Int {
         var sum = 0
-        File("/home/gaurav/code/advent_of_code/2023/inputs/day_one.txt").forEachLine() {
+        File("../inputs/day_one.txt").forEachLine() {
             val regex = "\\d".toRegex()
             var matches = regex.findAll(it)
             var digits = matches.map { it.groupValues[0] }.joinToString()
@@ -28,7 +28,7 @@ class DayOne {
 
     fun part_two(): Int {
         var sum = 0
-        File("/home/gaurav/code/advent_of_code/2023/inputs/day_one.txt").forEachLine() {
+        File("../inputs/day_one.txt").forEachLine() {
             var line = it
             NUM_ARR.map { (pattern, value) -> line = line.replace(pattern, value) }
             val regex = "\\d".toRegex()
